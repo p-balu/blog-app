@@ -196,6 +196,7 @@ h5{
 .viewContentText{
 margin-top:3.5%;
 font-size: 20px;
+word-spacing: 4px;
 width: 70%;
 line-height: 32px;
 margin-left: 16%;
@@ -216,7 +217,7 @@ margin-left: 16%;
 }
 @media(max-width:480px ) and (min-width:320px){
   .App{
-  height: 453px;
+  height: 860px;
   margin-top: 3.5%;
 }
 .headerText{
@@ -297,6 +298,7 @@ width: 45%;
 .viewContentText{
   margin-left: 6%;
   width: 90%;
+  word-spacing: 2px;
 line-height: 18px;
 font-size:10px
 }
@@ -310,7 +312,7 @@ font-size:10px
 .emptyBackground{
   height: 180px;
 }}
-@media(max-width:768px ) and (min-width:481px){
+@media(max-width:767px ) and (min-width:481px){
   .App{
   height: 700px;
   margin-top: 7.5%;
@@ -394,6 +396,7 @@ width: 45%;
 .viewContentText{
   margin-left: 6%;
   width: 90%;
+  word-spacing: 3px;
 line-height: 27px;
 font-size:18px
 }
@@ -408,9 +411,9 @@ font-size:18px
   height: 180px;
 }
 }
-@media(max-width:1024px ) and (min-width:769px){
+@media(max-width:1024px ) and (min-width:768px){
   .App{
-  height: 700px;
+  height: 1000px;
   margin-top: 3.5%;
 }
 .headerText{

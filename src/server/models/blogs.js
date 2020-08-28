@@ -7,15 +7,15 @@ module.exports = (sequelize, DataTypes) => {
             primaryKey: true
         },
         title: {
-            type: DataTypes.STRING(100),
+            type: DataTypes.STRING(300),
             allowNull: false,
         },
         content: {
-            type: DataTypes.STRING(1000),
+            type: DataTypes.STRING(5000),
             allowNull: false,
         },
         slug: {
-            type: DataTypes.STRING(100),
+            type: DataTypes.STRING(300),
             allowNull: false,
         },
         published: {
