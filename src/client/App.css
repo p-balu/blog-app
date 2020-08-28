@@ -1,0 +1,704 @@
+.headerText{
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(71, 69, 69);
+  border:1px solid rgb(139, 139, 139);
+  margin:0.2%;
+  box-shadow: 0px 1px 1px 1px gray;
+}
+.nameHeader{
+  font-size: large;
+  color:dodgerblue;
+  margin-top:1.7%;
+  margin-right: 8%;
+}
+.postContainer{
+  margin-top: 3%;
+}
+h3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: xxx-large;
+}
+h4{
+  margin-left: 12%;
+  font-size: x-large;
+  font-weight: 500;
+  margin-top:-0.1%;
+  color:rgb(77, 77, 77);
+}
+.link{
+  margin-top:0.8%;
+  font-size: larger;
+  font-weight: 500;
+  margin-right: 18%;
+  color: #2fb190;
+}
+.noPostsContainer{
+  margin-left:40%;
+  margin-top:5%;
+  width: 18%;
+  text-align: center;
+}
+.emptyBackground{
+width: 100%;
+height: 220px;
+background-color: rgb(199, 225, 226);
+}
+.App{
+  background-color:white;
+  width: 80%;
+  height: 900px;
+  margin-left: 10%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  box-shadow: 0 0 12px 12px rgba(38, 58, 75, 0.12);
+}
+.reactSwitchCheckbox {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.reactSwitchLabel {
+  margin:1%;
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  width: 6.5%;
+  height: 30px;
+  background: rgb(131, 131, 131);
+  border-radius: 100px;
+  position: relative;
+  transition: background-color .2s;
+}
+.reactSwitchLabel .reactSwitchButton {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 50%;
+  height: 25px;
+  border-radius: 45px;
+  transition: 0.2s;
+  background: #fff;
+  box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+}
+.reactSwitchCheckbox:checked + .reactSwitchLabel .reactSwitchButton {
+  left: calc(100% - 2px);
+  transform: translateX(-100%);
+}
+.reactSwitchLabel:active .reactSwitchButton {
+  width:45%;
+}
+.spanTextValue{
+  margin-left:150%;
+  font-size:medium;
+  font-weight: 600;
+  color: rgb(121, 120, 120);
+}
+.formFields{
+  width: 50%;
+  height: 60%;
+  margin-left: 30%;
+  margin-top: 4%;
+}
+h5{
+  font-size: xx-large;
+  font-weight: 500;
+  margin:1%;
+}
+.inputTitleText{
+  width: 80%;
+  margin:1%;
+  margin-top:3%;
+  padding: 12px 10px;
+  font-size:large;
+}
+.inputTitleText::placeholder{
+  font-size:large
+}
+.inputTitleText::placeholder{
+  font-size:large
+}
+.inputContentText{
+  width: 81.5%;
+  margin:1%;
+  margin-top:4%;
+  height: 240px;
+  padding: 12px 10px;
+  font-size:larger;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.inputFieldButton,.inputFieldButtons{
+  margin-top: 3%;
+  background-color: #6600ff;
+  color:white;
+  font-weight: 600;
+  padding: 8px 30px;
+  border:none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.inputFieldButton{
+  margin-left:71%;
+}
+.inputFieldButtons{
+  margin-left: 1%;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+}
+#students {
+  text-align: center;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid rgb(29, 28, 28);
+  border-radius:10px;
+  width: 70%;
+  font-size: larger;
+  margin-left:12%;
+  margin-top:1%;
+}
+#students td, #students th {
+  border: 1px solid rgb(29, 26, 26);
+  border-radius:5px;
+  padding: 8px;
+}
+#students tr:hover 
+{
+  background-color: #ddd;
+  cursor: pointer;
+}
+#students th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.viewContainer{
+  width:80%;
+  margin-left:10%;
+  align-items: center;
+  margin-top: 5%;
+  font-weight: 500;
+  font-size:x-large;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.viewTitleText{
+  text-align: center;
+}
+.viewContentText{
+margin-top:3.5%;
+font-size: 24px;
+width: 70%;
+line-height: 32px;
+margin-left: 16%;
+}
+.searchField{
+  margin-left:32%;
+  margin-right:1%;
+  background: #fff;
+  border: 1px solid rgb(204, 204, 252);
+  border-radius: 5px;
+  box-shadow: 0 10px 35px rgba(0,0,0,.1);
+  font-size: large;
+  height: 30px;
+  outline: none;
+  padding: 1rem 1rem 1rem 10rem;
+  width: 20%;
+  margin-bottom: 2.5%;
+}
+@media(max-width:480px ) and (min-width:320px){
+  .App{
+  height: 453px;
+  margin-top: 3.5%;
+}
+.headerText{
+  font-size: x-small;
+}
+h4{
+  font-size: large;
+}
+.link{
+  font-size: medium;
+}
+.searchField{
+margin-left: 6%;
+height: 20px;
+font-size: small;
+padding: 10px 54px;
+width:45%
+}
+.nameHeader{
+  font-size: small;
+  margin-top:6%;
+  margin-left:2%
+}
+#students {
+width: 90%;
+font-size: x-small;
+margin-left:5%;
+margin-top:3%
+}
+.formFields{
+margin-left:7%;
+width: 92%;
+}
+h5{
+  font-size:medium;
+  margin-top:5%;
+}
+.inputTitleText{
+padding:8px 6px;
+font-size:13px;
+}
+.inputContentText{
+  padding: 15px 10px;
+  height: 150px;
+  font-size:13px;
+  line-height: 18px;
+}
+.inputContentText::placeholder{
+  font-size:small
+}
+.inputTitleText::placeholder{
+  font-size:small
+}
+.inputFieldButton{
+  margin-left:60%;
+  padding: 8px 10px;
+}
+.inputFieldButtons{
+  padding: 8px 10px;
+  margin-top: 6%;
+}
+.reactSwitchLabel {
+  width: 16%;
+  height: 22px;
+}
+.reactSwitchLabel .reactSwitchButton {
+  height: 18px;
+width: 45%;
+}
+.spanTextValue{
+  font-size:small;
+}
+.viewContainer{
+  width:90%;
+  margin-left:4%;
+  font-size:small;
+}
+.viewContentText{
+  margin-left: 6%;
+  width: 90%;
+line-height: 18px;
+font-size:10px
+}
+.buttons{
+  width: 90%;
+}
+.noPostsContainer{
+  width:70%;
+  margin-left: 15%;
+}
+.emptyBackground{
+  height: 180px;
+}}
+@media(max-width:768px ) and (min-width:481px){
+  .App{
+  height: 700px;
+  margin-top: 7.5%;
+}
+.headerText{
+  font-size: small;
+}
+h4{
+  font-size: larger;
+}
+.link{
+  font-size: large;
+  margin-top:-0.5px;
+}
+.searchField{
+margin-left: 14%;
+height: 20px;
+font-size: medium;
+padding: 10px 54px;
+width:45%
+}
+.nameHeader{
+  font-size: medium;
+  margin-top:5%;
+  margin-left:2%
+}
+#students {
+width: 90%;
+font-size: medium;
+margin-left:5%;
+margin-top:3%
+}
+.formFields{
+margin-left:7%;
+width: 92%;
+}
+h5{
+  font-size:larger;
+  margin-top:4%;
+}
+.inputTitleText{
+padding:8px 6px;
+font-size:16px;
+}
+.inputContentText{
+  padding: 15px 10px;
+  height: 250px;
+  font-size:16px;
+  line-height: 22px;
+}
+.inputContentText::placeholder{
+  font-size:medium
+}
+.inputTitleText::placeholder{
+  font-size:medium
+}
+.inputFieldButton{
+  margin-left:70%;
+  padding: 8px 10px;
+}
+.inputFieldButtons{
+  padding: 8px 10px;
+  margin-top: 6%;
+}
+.reactSwitchLabel {
+  width: 12%;
+  height: 25px;
+}
+.reactSwitchLabel .reactSwitchButton {
+  height: 20px;
+width: 45%;
+}
+.spanTextValue{
+  font-size:medium;
+}
+.viewContainer{
+  width:90%;
+  margin-left:4%;
+  font-size:large;
+}
+.viewContentText{
+  margin-left: 6%;
+  width: 90%;
+line-height: 27px;
+font-size:18px
+}
+.buttons{
+  width: 90%;
+}
+.noPostsContainer{
+  width:60%;
+  margin-left: 17%;
+}
+.emptyBackground{
+  height: 180px;
+}
+}
+@media(max-width:1024px ) and (min-width:769px){
+  .App{
+  height: 700px;
+  margin-top: 3.5%;
+}
+.headerText{
+  font-size: medium;
+}
+h4{
+  font-size: x-large;
+}
+.link{
+  font-size: larger;
+  margin-top:-0.5px;
+}
+.searchField{
+margin-left: 24%;
+height: 20px;
+font-size: large;
+padding: 18px 54px;
+width:40%
+}
+.nameHeader{
+  font-size: large;
+  margin-top:3%;
+  margin-left:2%
+}
+#students {
+width: 90%;
+font-size: large;
+margin-left:5%;
+margin-top:3%
+}
+.formFields{
+margin-left:9%;
+width: 92%;
+}
+h5{
+  font-size:x-large;
+  margin-top:4%;
+}
+.inputTitleText{
+padding:8px 6px;
+font-size:18px;
+}
+.inputContentText{
+  padding: 15px 10px;
+  height: 280px;
+  font-size:18px;
+  line-height: 24px;
+}
+.inputContentText::placeholder{
+  font-size:large
+}
+.inputTitleText::placeholder{
+  font-size:large
+}
+.inputFieldButton{
+  margin-left:75%;
+  padding: 8px 14px;
+}
+.inputFieldButtons{
+  padding: 8px 10px;
+  margin-top: 4%;
+}
+.reactSwitchLabel {
+  width: 7%;
+  height: 28px;
+}
+.reactSwitchLabel .reactSwitchButton {
+  height: 23px;
+width: 45%;
+}
+.spanTextValue{
+  font-size:medium;
+}
+.viewContainer{
+  width:90%;
+  margin-left:4%;
+  font-size:x-large;
+}
+.viewContentText{
+  margin-left: 6%;
+  width: 90%;
+line-height: 34px;
+font-size:20px
+}
+.buttons{
+  width: 85%;
+}
+.noPostsContainer{
+  width:40%;
+  margin-left: 28%;
+}
+.emptyBackground{
+  height: 200px;
+}
+}
+@media(max-width:1200px ) and (min-width:1025px){
+  .App{
+  height: 1130px;
+  margin-top: 3.5%;
+}
+.headerText{
+  font-size: medium;
+}
+h4{
+  font-size: x-large;
+}
+.link{
+  font-size: larger;
+  margin-top:-0.5px;
+}
+.searchField{
+margin-left: 24%;
+height: 22px;
+font-size: large;
+padding: 18px 54px;
+width:40%
+}
+.nameHeader{
+  font-size: large;
+  margin-top:3%;
+  margin-left:2%
+}
+#students {
+width: 90%;
+font-size:larger;
+margin-left:5%;
+margin-top:3%
+}
+.formFields{
+margin-left:9%;
+width: 92%;
+}
+h5{
+  font-size:x-large;
+  margin-top:4%;
+}
+.inputTitleText{
+padding:8px 6px;
+font-size:18px;
+}
+.inputContentText{
+  padding: 15px 10px;
+  height: 320px;
+  font-size:18px;
+  line-height: 26px;
+}
+.inputContentText::placeholder{
+  font-size:large
+}
+.inputTitleText::placeholder{
+  font-size:large
+}
+.inputFieldButton{
+  margin-left:75%;
+  padding: 8px 14px;
+}
+.inputFieldButtons{
+  padding: 8px 10px;
+  margin-top: 5%;
+}
+.reactSwitchLabel {
+  width: 7%;
+  height: 28px;
+}
+.reactSwitchLabel .reactSwitchButton {
+  height: 23px;
+width: 45%;
+}
+.spanTextValue{
+  font-size:large;
+}
+.viewContainer{
+  width:90%;
+  margin-left:4%;
+  font-size:x-large;
+}
+.viewContentText{
+  margin-left: 6%;
+  width: 90%;
+line-height: 34px;
+font-size:21px
+}
+.buttons{
+  width: 85%;
+}
+.noPostsContainer{
+  width:30%;
+  margin-left: 35%;
+}
+.emptyBackground{
+  height: 180px;
+}
+}
+@media(max-width:1800px ) and (min-width:1201px){
+  .App{
+  height: 1330px;
+  margin-top: 3.5%;
+}
+.headerText{
+  font-size: medium;
+}
+h4{
+  font-size: x-large;
+}
+.link{
+  font-size: larger;
+  margin-top:-0.5px;
+}
+.searchField{
+margin-left: 21%;
+height: 22px;
+font-size: large;
+padding: 18px 35px;
+width:45%
+}
+.nameHeader{
+  font-size: larger;
+  margin-top:2.5%;
+  margin-left:2%
+}
+#students {
+width: 75%;
+font-size:larger;
+margin-left:10%;
+margin-top:3%
+}
+.formFields{
+margin-left:9%;
+width: 92%;
+}
+h5{
+  font-size:x-large;
+  margin-top:4%;
+}
+.inputTitleText{
+padding:8px 12px;
+font-size:18px;
+}
+.inputContentText{
+  padding: 15px 10px;
+  height: 320px;
+  font-size:18px;
+  line-height: 26px;
+}
+.inputContentText::placeholder{
+  font-size:large
+}
+.inputTitleText::placeholder{
+  font-size:large
+}
+.inputFieldButton{
+  margin-left:78%;
+  padding: 8px 14px;
+}
+.inputFieldButtons{
+  padding: 8px 10px;
+  margin-top: 5%;
+}
+.reactSwitchLabel {
+  width: 6%;
+  height: 28px;
+}
+.reactSwitchLabel .reactSwitchButton {
+  height: 23px;
+width: 45%;
+}
+.spanTextValue{
+  font-size:large;
+}
+.viewContainer{
+  width:90%;
+  margin-left:4%;
+  font-size:x-large;
+}
+.viewContentText{
+  margin-left: 6%;
+  width: 90%;
+line-height: 36px;
+font-size:23px
+}
+.buttons{
+  width: 85%;
+}
+.noPostsContainer{
+  width:30%;
+  margin-left: 35%;
+}
+.emptyBackground{
+  height: 190px;
+}
+}
