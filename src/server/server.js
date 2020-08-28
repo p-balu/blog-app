@@ -9,7 +9,7 @@ app.use(express.json());
 //api calls
 const apiRoutes = require("./routes/apiRoutes");
 app.use("/api", apiRoutes);
-//server run
+//server run on port 4000
 db.sequelize.sync().then(() => {
     app.listen(4000, () => {
         console.log("server is working in port 4000");

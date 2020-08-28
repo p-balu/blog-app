@@ -36,7 +36,7 @@ router.post("/add", (req, res) => {
             })
     );
 });
-// delete blog by it's id
+// delete blog by it's id 
 router.delete("/delete/:id", (req, res) => {
     db.Blogs.destroy({
         where: {
