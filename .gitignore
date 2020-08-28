@@ -10,7 +10,7 @@
 
 # production
 /build
-#sql credentials
+#development connection credentials
 .env
 # misc
 .DS_Store
